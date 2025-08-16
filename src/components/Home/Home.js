@@ -26,7 +26,7 @@ function Home() {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <Type />               
                 <div style={{ marginTop: 20 }}>
                   <p style={{ fontSize: "1.2em", color: "#bfa2db", marginBottom: 0 }}>
                     Passionate about AI, coding, and building real-world solutions.
