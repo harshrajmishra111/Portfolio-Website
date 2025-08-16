@@ -39,14 +39,24 @@ function Home2() {
               </i>
               <br />
               <br />
-              {/* Whenever possible, I also apply my passion for learning and developing products
-              with <b className="purple">latest web technologies.</b> and other
+              If you can’t find me coding, you’ll probably catch me explaining AI to my friends
+              <b className="purple"> (who didn’t ask) </b> using
               <i>
                 <b className="purple">
                   {" "}
-                   Modern Javascript Library and Frameworks.
+                    pizza toppings as analogies.
                 </b>
-              </i> */}
+              </i>
+              <br />
+              <br />
+              And yes, I occasionally talk to my code.
+              <b className="purple"> Sometimes it even </b> talks back
+              <i>
+                <b className="purple">
+                  {" "}
+                    (usually in the form of errors).
+                </b>
+              </i>
 
             </p>
           </Col>

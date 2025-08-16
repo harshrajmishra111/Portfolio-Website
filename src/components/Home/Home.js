@@ -27,6 +27,18 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+                <div style={{ marginTop: 20 }}>
+                  <p style={{ fontSize: "1.2em", color: "#bfa2db", marginBottom: 0 }}>
+                    Passionate about AI, coding, and building real-world solutions.
+                  </p>
+                  <p style={{ fontSize: "1.1em", color: "#bfa2db", marginBottom: 40 }}>
+                    Always eager to learn, collaborate, and innovate.
+                  </p>
+                  <blockquote style={{ fontStyle: "italic", color: "#a084ca", borderLeft: "4px solid #bfa2db", paddingLeft: 16, marginBottom: 32 }}>
+                    "The only way to do great work is to love what you do."<br />
+                    <span style={{ fontSize: "0.95em", color: "#bfa2db" }}>– Steve Jobs</span>
+                  </blockquote>
+                </div>
               </div>
             </Col>
 
