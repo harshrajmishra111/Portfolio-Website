@@ -17,7 +17,7 @@ function AboutCard() {
             Beyond coding, I’m passionate about sports, hitting the gym, exploring music, and traveling — things that keep me curious, energized, and inspired.   
           </p>
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Here’s a bit more about me"{" "}
+            Here’s a bit more about me{" "}
           </p>
 
           <ul className="about-activity-list">
