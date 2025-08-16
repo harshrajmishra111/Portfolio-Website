@@ -25,7 +25,7 @@ function AboutCard() {
               ♟️ I'm a regional-level chess player
             </li>
             <li className="about-activity">
-              🥁 Senior Diploma in Classical Instrument (Tabla)
+              🪘 I completed a 5-Year Senior Diploma in Classical Instrument (Tabla).
             </li>
             <li className="about-activity">
               🇩🇪 Keen on learning languages — recently completed 1 year of learning German
