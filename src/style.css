@@ -551,10 +551,7 @@ button:focus {
   color: white !important;
 }
 
-.img-fluid {
-  max-width: 330px !important;
-  height: 330px !important;
-}
+
 
 .tech-icons {
   font-size: 4.5em !important;
