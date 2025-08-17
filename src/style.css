@@ -552,6 +552,10 @@ button:focus {
 }
 
 
+.home-section canvas {
+  pointer-events: none !important;
+}
+
 
 .tech-icons {
   font-size: 4.5em !important;
