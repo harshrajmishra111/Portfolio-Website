@@ -10,7 +10,7 @@ function AboutCard() {
             Hello everyone, I am <span className="purple">Harsh Raj Mishra </span>
             from <span className="purple"> India.</span>
             <br />
-            I’m currently pursuing my B.Tech in AIML, with hands-on experience in ML, DL, NLP, and real-world AI projects.
+            I’m currently pursuing my B.Tech in CSE - AIML at Gyan Ganga Institute of Technology & Sciences, with hands-on experience in ML, DL, NLP, and real-world AI projects.
             <br />
             <br />
 
