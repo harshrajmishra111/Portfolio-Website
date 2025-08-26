@@ -9,6 +9,7 @@ function Type() {
           "Developer",
           "ML/AI Developer",
           "Data Scientist",
+          "IOS Developer",
           "Flutter Developer",
         ],
         autoStart: true,
