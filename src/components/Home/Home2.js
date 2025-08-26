@@ -25,7 +25,7 @@ function Home2() {
               <br />
               <br />I am proficient in established technologies such as
               <i>
-                <b className="purple"> Python, ML, IOS and Data Science </b>
+                <b className="purple"> Python, ML and Data Science </b>
               </i>
               <br />
               <br />
