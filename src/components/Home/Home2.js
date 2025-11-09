@@ -20,7 +20,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a passionate coder with expertise in Python, machine learning, deep
+              I am a coder with expertise in Python, machine learning, deep
               learning, and artificial intelligence. I thrive on solving complex problems
               <br />
               <br />I am proficient in established technologies such as
