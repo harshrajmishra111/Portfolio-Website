@@ -29,7 +29,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              I’m passionate about creating impactful &nbsp;
+              I’m driven to creating impactful &nbsp;
               <i>
                 <b className="purple">Real-world Projects and Products </b>
                 while continuously exploring new horizons in{" "}
