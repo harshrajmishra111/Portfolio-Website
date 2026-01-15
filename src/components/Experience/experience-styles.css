@@ -13,7 +13,7 @@
   color: white !important;
   min-height: 100vh !important;
   overflow: visible !important;
-  font-size: 1.125rem !important;           /* Increased body text (~+1–2pt) */
+  font-size: 1.125rem !important;
 }
 
 /* Force inheritance for child elements */
@@ -23,9 +23,9 @@
 
 /* Restore large size for the main page heading ("My Experience") */
 .experience-section h1,
-.text-4xl,                              /* if you use Tailwind text-4xl class */
+.text-4xl,
 .heading {
-  font-size: 2.3rem !important;             /* ← restored large size (adjust to 2.8rem or 3.2rem if needed) */
+  font-size: 2.3rem !important;
   font-weight: 700 !important;
   line-height: 1.2 !important;
   margin-bottom: 1rem !important;
@@ -36,7 +36,7 @@
 .experience-section h3,
 .experience-section h4,
 .experience-section h5 {
-  font-size: revert !important;           /* let them use their original size or define explicitly */
+  font-size: revert !important;
 }
 
 /* Experience Bar (Horizontal Card) */
@@ -71,7 +71,7 @@
   align-items: flex-start !important;
   text-align: left !important;
   padding-right: 1rem !important;
-  max-width: calc(100% - 150px) !important;
+  max-width: calc(100% - 300px) !important;    /* Increased space for right side */
 }
 
 .experience-bar-logo {
@@ -125,7 +125,7 @@
   font-weight: 600 !important;
 }
 
-/* Right Side - Horizontal Thumbnails */
+/* Right Side - Horizontal Thumbnails - FIXED */
 .experience-bar-right {
   display: flex !important;
   flex-direction: row !important;
@@ -136,18 +136,22 @@
   margin-left: auto !important;
   padding-left: 2rem !important;
   padding-top: 0.25rem !important;
+  min-width: 280px !important;         /* Ensure enough space for 2 images */
 }
 
 .experience-bar-thumb {
-  width: auto !important;
-  max-width: 80px !important;
-  height: 90px !important;
+  max-width: 140px !important;         /* Allow wider images */
+  max-height: 150px !important;        /* Set max height instead of fixed height */
+  width: auto !important;              /* Auto width based on aspect ratio */
+  height: auto !important;             /* Auto height based on aspect ratio */
   border-radius: 8px !important;
-  object-fit: contain !important;
+  object-fit: contain !important;      /* Keep full image visible */
   border: 2px solid rgba(199, 112, 240, 0.4) !important;
   transition: all 0.3s ease !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
   background: rgba(31, 31, 31, 0.5) !important;
+  padding: 6px !important;
+  display: block !important;
 }
 
 .experience-bar-thumb:hover {
@@ -495,12 +499,13 @@
     width: 100% !important;
     justify-content: flex-start !important;
     padding-left: 0 !important;
+    min-width: auto !important;
   }
   
   .experience-bar-thumb {
-    width: auto !important;
-    max-width: 70px !important;
-    height: 80px !important;
+    max-width: 110px !important;       /* Slightly smaller on mobile */
+    max-height: 120px !important;      /* Slightly smaller on mobile */
+    padding: 5px !important;
   }
 
   .modal.experience-modal .modal-header {
@@ -546,6 +551,6 @@
   .experience-section h1,
   .text-4xl,
   .heading {
-    font-size: 2.5rem !important;       /* Slightly smaller on mobile */
+    font-size: 2.5rem !important;
   }
 }
