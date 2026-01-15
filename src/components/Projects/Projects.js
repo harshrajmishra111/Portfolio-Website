@@ -9,7 +9,8 @@ import netflix from "../../Assets/Projects/netflix.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import ticket from "../../Assets/Projects/ticket.png";
 import project from "../../Assets/Projects/mgmt.png";
-// import assistant from "../../Assets/Projects/hello.png";
+import assistant from "../../Assets/Projects/Rag Project.png";
+import company from "../../Assets/Projects/Company Owner Details.jpeg";
 
 function Projects() {
   return (
@@ -23,6 +24,29 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={assistant}
+              isBlog={false}
+              title="Multi-Source RAG Analyzer"
+              description="Developed a multi-document RAG chat system using LangChain, Perplexity API and HF embeddings to analyze PDFs with relevance scoring and source citations and interactive visualizations. Deployed on Hugging Face Spaces, reducing information extraction time by 70%."
+              ghLink="https://huggingface.co/spaces/harshrajmishra111/my-rag-dashboard"
+              demoLink="https://huggingface.co/spaces/harshrajmishra111/my-rag-dashboard"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={company}
+              isBlog={false}
+              title="Company Ownership Feature (CAPRAE)"
+              description="Developed a feature with APIs and Gemini AI to fetch company owner details (founder, company, LinkedIn, etc.), Integrated into SaaSquatch's Get Owner Details button at Leads enrichment page, enhancing lead qualification and saving 80% research time. Live on Caprae Capital’s SaaSquatch Platform."
+              ghLink="https://www.saasquatchleads.com/"
+              //demoLink="https://huggingface.co/spaces/harshrajmishra111/my-rag-dashboard"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={netflix}
