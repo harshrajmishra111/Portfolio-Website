@@ -1,0 +1,527 @@
+/* ======================================= */
+/* EXPERIENCE PAGE - STANDALONE STYLES */
+/* experience-styles.css */
+/* ======================================= */
+
+/* --------- */
+/* Experience Section */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  z-index: 1 !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+  min-height: 100vh !important;
+  overflow: visible !important;
+}
+
+/* Experience Bar (Horizontal Card) */
+.experience-bar {
+  height: auto !important;
+  min-height: 120px !important;
+  padding: 1.5rem !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important; /* Changed to flex-start for dynamic height */
+  justify-content: space-between !important;
+  background: rgba(31, 31, 31, 0.4) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  margin-bottom: 1.5rem !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  position: relative !important;
+}
+
+.experience-bar:hover {
+  box-shadow: 0 4px 20px rgba(199, 112, 240, 0.2) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Left Side - Logo + Content */
+.experience-bar-left {
+  flex: 1 !important;
+  display: flex !important;
+  align-items: flex-start !important;
+  text-align: left !important;
+  padding-right: 1rem !important;
+  max-width: calc(100% - 150px) !important;
+}
+
+.experience-bar-logo {
+  width: 40px !important;
+  height: 40px !important;
+  margin-right: 1rem !important;
+  border-radius: 50% !important;
+  object-fit: contain !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
+  flex-shrink: 0 !important;
+}
+
+.experience-bar-left > div {
+  flex: 1 !important;
+}
+
+.experience-bar-left h5 {
+  margin: 0 0 0.25rem 0 !important;
+  font-size: 1.1rem !important;
+  line-height: 1.3 !important;
+}
+
+.experience-bar-left h6 {
+  margin: 0 0 0.25rem 0 !important; /* Reduced bottom margin */
+  font-size: 0.95rem !important;
+  line-height: 1.3 !important;
+}
+
+/* Duration Styling */
+.experience-duration {
+  margin: 0 0 0.5rem 0 !important;
+  font-size: 0.8rem !important;
+  color: #9a9a9a !important;
+  font-style: italic !important;
+  line-height: 1.2 !important;
+}
+
+.experience-bar-left ul {
+  margin: 0 !important;
+  padding-left: 1.2rem !important;
+  line-height: 1.4 !important;
+}
+
+.experience-bar-left li {
+  margin: 0.25rem 0 !important;
+  padding: 0 !important;
+  line-height: 1.4 !important;
+  font-size: 0.85rem !important;
+  color: #b0b0b0 !important;
+}
+
+/* Right Side - Horizontal Thumbnails */
+.experience-bar-right {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0.75rem !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important; /* Changed to flex-start */
+  flex-shrink: 0 !important;
+  margin-left: auto !important;
+  padding-left: 2rem !important;
+  padding-top: 0.25rem !important; /* Small top padding */
+}
+
+.experience-bar-thumb {
+  width: auto !important; /* Dynamic width */
+  max-width: 80px !important; /* Maximum width */
+  height: 90px !important; /* Fixed height */
+  border-radius: 8px !important;
+  object-fit: contain !important; /* Maintain aspect ratio */
+  border: 2px solid rgba(199, 112, 240, 0.4) !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
+  background: rgba(31, 31, 31, 0.5) !important; /* Background for transparent areas */
+}
+
+.experience-bar-thumb:hover {
+  box-shadow: 0 4px 12px rgba(199, 112, 240, 0.5) !important;
+  transform: scale(1.05) !important;
+  border-color: rgba(199, 112, 240, 0.7) !important;
+}
+
+/* --------- */
+/* Experience Modal */
+/* --------- */
+
+.modal.experience-modal .modal-content {
+  background: linear-gradient(
+    to bottom left,
+    rgba(17, 16, 16, 0.95),
+    rgba(12, 8, 24, 0.98)
+  ) !important;
+  border: 2px solid rgba(199, 112, 240, 0.3) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal.experience-modal .modal-header {
+  padding: 2rem 2rem 1rem 2rem !important;
+  background: transparent !important;
+  border-bottom: none !important;
+}
+
+.modal.experience-modal .modal-header .purple {
+  color: #c770f0 !important;
+  font-size: 1.8rem !important;
+  font-weight: 600 !important;
+}
+
+.modal.experience-modal .modal-header h5 {
+  color: #b0b0b0 !important;
+  font-size: 1.1rem !important;
+}
+
+.modal.experience-modal .modal-body {
+  padding: 1rem 2rem 2rem 2rem !important;
+  max-height: 70vh !important;
+  overflow-y: auto !important;
+  color: white !important;
+}
+
+/* Custom Scrollbar for Modal */
+.modal.experience-modal .modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal.experience-modal .modal-body::-webkit-scrollbar-track {
+  background: rgba(45, 25, 80, 0.3);
+  border-radius: 10px;
+}
+
+.modal.experience-modal .modal-body::-webkit-scrollbar-thumb {
+  background: rgba(199, 112, 240, 0.6);
+  border-radius: 10px;
+}
+
+.modal.experience-modal .modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(199, 112, 240, 0.8);
+}
+
+/* Description Section */
+.modal.experience-modal .modal-description-section {
+  margin-bottom: 2rem !important;
+  padding: 1.5rem !important;
+  background: rgba(199, 112, 240, 0.08) !important;
+  border-radius: 12px !important;
+  border-left: 4px solid #c770f0 !important;
+}
+
+.modal.experience-modal .modal-description-section h4 {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  color: #c770f0 !important;
+  margin-bottom: 1rem !important;
+}
+
+.modal.experience-modal .modal-description-section p {
+  font-size: 1rem !important;
+  line-height: 1.7 !important;
+  margin-bottom: 0 !important;
+  color: #d0d0d0 !important;
+}
+
+/* Projects Section */
+.modal.experience-modal .modal-projects-section {
+  margin-bottom: 2rem !important;
+}
+
+.modal.experience-modal .modal-projects-section h4 {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  color: #c770f0 !important;
+}
+
+.modal.experience-modal .projects-list {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+.modal.experience-modal .project-item-modal {
+  padding: 1.2rem !important;
+  background: rgba(31, 31, 31, 0.5) !important;
+  border-radius: 10px !important;
+  border: 1px solid rgba(199, 112, 240, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.modal.experience-modal .project-item-modal:hover {
+  background: rgba(31, 31, 31, 0.7) !important;
+  border-color: rgba(199, 112, 240, 0.4) !important;
+  transform: translateX(5px) !important;
+}
+
+.modal.experience-modal .project-item-modal h5 {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  color: white !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.modal.experience-modal .project-item-modal h5 .purple {
+  margin-right: 0.5rem !important;
+  font-size: 1.2rem !important;
+  color: #c770f0 !important;
+}
+
+.modal.experience-modal .project-item-modal p {
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
+  color: #b5b5b5 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Screenshots Gallery */
+.modal.experience-modal .modal-screenshots-section {
+  margin-bottom: 2rem !important;
+}
+
+.modal.experience-modal .modal-screenshots-section h4 {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  color: #c770f0 !important;
+}
+
+.modal.experience-modal .screenshot-thumbnail {
+  position: relative !important;
+  width: 100% !important;
+  height: auto !important; /* Dynamic height */
+  min-height: 200px !important; /* Minimum height */
+  max-height: 400px !important; /* Maximum height */
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  cursor: pointer !important;
+  border: 2px solid rgba(199, 112, 240, 0.3) !important;
+  transition: all 0.3s ease !important;
+  background: rgba(31, 31, 31, 0.5) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 1rem !important; /* Add padding */
+}
+
+.modal.experience-modal .screenshot-thumbnail img {
+  max-width: 100% !important;
+  max-height: 350px !important; /* Constrain height */
+  width: auto !important; /* Auto width */
+  height: auto !important; /* Auto height */
+  object-fit: contain !important; /* Maintain aspect ratio */
+  transition: all 0.3s ease !important;
+}
+
+.modal.experience-modal .screenshot-overlay {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(199, 112, 240, 0.7) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.modal.experience-modal .screenshot-thumbnail:hover .screenshot-overlay {
+  opacity: 1 !important;
+}
+
+.modal.experience-modal .screenshot-thumbnail:hover {
+  transform: scale(1.05) !important;
+  border-color: rgba(199, 112, 240, 0.6) !important;
+  box-shadow: 0 8px 20px rgba(199, 112, 240, 0.3) !important;
+}
+
+.modal.experience-modal .screenshot-thumbnail:hover img {
+  transform: scale(1.03) !important; /* Reduced scale */
+}
+
+/* Action Buttons */
+.modal.experience-modal .modal-actions {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+  justify-content: center !important;
+  margin-top: 2rem !important;
+  padding-top: 1.5rem !important;
+  border-top: 1px solid rgba(199, 112, 240, 0.2) !important;
+}
+
+.modal.experience-modal .modal-btn-primary {
+  background: linear-gradient(135deg, #623686, #8a4aa8) !important;
+  border: none !important;
+  padding: 0.6rem 1.5rem !important;
+  font-size: 0.95rem !important;
+  border-radius: 25px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(199, 112, 240, 0.3) !important;
+}
+
+.modal.experience-modal .modal-btn-primary:hover {
+  background: linear-gradient(135deg, #7a3da1, #a458c4) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(199, 112, 240, 0.5) !important;
+}
+
+.modal.experience-modal .modal-btn-secondary {
+  background: rgba(100, 100, 100, 0.3) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
+  padding: 0.6rem 1.5rem !important;
+  font-size: 0.95rem !important;
+  border-radius: 25px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.modal.experience-modal .modal-btn-secondary:hover {
+  background: rgba(199, 112, 240, 0.2) !important;
+  border-color: rgba(199, 112, 240, 0.5) !important;
+}
+
+/* --------- */
+/* Full-Size Image Lightbox */
+/* --------- */
+
+.modal.image-lightbox-modal .modal-dialog {
+  max-width: 95vw !important;
+  max-height: 95vh !important;
+  margin: 2.5vh auto !important;
+}
+
+.modal.image-lightbox-modal .modal-content {
+  background: rgba(0, 0, 0, 0.98) !important;
+  border: 2px solid rgba(199, 112, 240, 0.4) !important;
+  border-radius: 12px !important;
+  height: 95vh !important;
+  overflow: hidden !important;
+}
+
+.modal.image-lightbox-modal .lightbox-header {
+  position: absolute !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 1000 !important;
+  display: flex !important;
+  gap: 1rem !important;
+}
+
+.modal.image-lightbox-modal .lightbox-download-btn {
+  background: linear-gradient(135deg, #623686, #8a4aa8) !important;
+  border: none !important;
+  padding: 0.5rem 1.5rem !important;
+  font-size: 0.9rem !important;
+  border-radius: 25px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 15px rgba(199, 112, 240, 0.4) !important;
+  transition: all 0.3s ease !important;
+}
+
+.modal.image-lightbox-modal .lightbox-download-btn:hover {
+  background: linear-gradient(135deg, #7a3da1, #a458c4) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(199, 112, 240, 0.6) !important;
+}
+
+.modal.image-lightbox-modal .lightbox-close-btn-button {
+  background: rgba(100, 100, 100, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  padding: 0.5rem 1.5rem !important;
+  font-size: 0.9rem !important;
+  border-radius: 25px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  color: white !important;
+}
+
+.modal.image-lightbox-modal .lightbox-close-btn-button:hover {
+  background: rgba(150, 150, 150, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  transform: translateY(-2px) !important;
+}
+
+.modal.image-lightbox-modal .lightbox-body {
+  padding: 0 !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+.modal.image-lightbox-modal .lightbox-image {
+  max-width: 90% !important;
+  max-height: 90vh !important;
+  object-fit: contain !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 50px rgba(199, 112, 240, 0.3) !important;
+}
+
+/* --------- */
+/* Responsive Design */
+/* --------- */
+
+@media (max-width: 768px) {
+  /* Experience Bars */
+  .experience-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1rem !important;
+  }
+  
+  .experience-bar-left {
+    padding-right: 0 !important;
+    margin-bottom: 1rem !important;
+    max-width: 100% !important;
+  }
+  
+  .experience-bar-right {
+    flex-direction: row !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    justify-content: flex-start !important;
+    padding-left: 0 !important;
+  }
+  
+  .experience-bar-thumb {
+    width: auto !important;
+    max-width: 70px !important;
+    height: 80px !important;
+  }
+
+  /* Modal */
+  .modal.experience-modal .modal-header {
+    padding: 1.5rem 1.5rem 1rem 1.5rem !important;
+  }
+
+  .modal.experience-modal .modal-header .purple {
+    font-size: 1.4rem !important;
+  }
+
+  .modal.experience-modal .modal-body {
+    padding: 1rem 1.5rem 1.5rem 1.5rem !important;
+  }
+
+  .modal.experience-modal .modal-description-section,
+  .modal.experience-modal .modal-projects-section,
+  .modal.experience-modal .modal-screenshots-section {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .modal.experience-modal .screenshot-thumbnail {
+    height: auto !important;
+    min-height: 150px !important;
+    max-height: 300px !important;
+    padding: 0.75rem !important;
+  }
+  
+  .modal.experience-modal .screenshot-thumbnail img {
+    max-height: 250px !important;
+  }
+
+  .modal.experience-modal .modal-actions {
+    flex-direction: column !important;
+  }
+
+  .modal.experience-modal .modal-btn-primary,
+  .modal.experience-modal .modal-btn-secondary {
+    width: 100% !important;
+  }
+}
