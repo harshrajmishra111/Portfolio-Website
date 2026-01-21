@@ -792,6 +792,86 @@ Overall, freelancing strengthened my ability to translate client requirements in
               My <span className="purple">Certificates</span>
             </h2>
 
+
+            {/* ═══════════ Technical Certificates Section ═══════════ */}
+            <h3 className="text-center mb-4" style={{ fontSize: '2.5rem', fontWeight: '800', color: '#c770f0' }}>
+              Technical Certificates
+            </h3>
+
+            <Row className="g-4 justify-content-center">
+              {/* Certificate 1 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert1)}>
+                    <img 
+                      src={cert1} 
+                      alt="Salesforce AI Agent Developer - SmartBridge" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Salesforce AI Agent Developer - SmartBridge</p>
+                </div>
+              </Col>
+
+              {/* Certificate 2 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert2)}>
+                    <img 
+                      src={cert2} 
+                      alt="Certificate 2" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">NPTEL - Google Cloud Computing (IIT KGP)</p>
+                </div>
+              </Col>
+              {/* Certificate 3 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert5)}>
+                    <img 
+                      src={cert5} 
+                      alt="Certificate 5" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Crash Course Python - Google</p>
+                </div>
+              </Col>
+              {/* Certificate 2 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert7)}>
+                    <img 
+                      src={cert7} 
+                      alt="Certificate 7" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Cisco Python Essentials 1</p>
+                </div>
+              </Col>
+              
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert6)}>
+                    <img 
+                      src={cert6} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Cisco Python Essentials 2</p>
+                </div>
+              </Col>
+
+
+
+            </Row>
+
+
             {/* ═══════════ Achievement Certificates Section ═══════════ */}
             <h3 className="text-center mb-4" style={{ fontSize: '2.5rem', fontWeight: '800', color: '#c770f0' }}>
               Achievement Certificates
@@ -1002,83 +1082,7 @@ Overall, freelancing strengthened my ability to translate client requirements in
 
             </Row>
 
-            {/* ═══════════ Technical Certificates Section ═══════════ */}
-            <h3 className="text-center mb-4" style={{ fontSize: '2.5rem', fontWeight: '800', color: '#c770f0' }}>
-              Technical Certificates
-            </h3>
-
-            <Row className="g-4 justify-content-center">
-              {/* Certificate 1 */}
-              <Col xs={12} sm={6} md={4} lg={4}>
-                <div className="certificate-card text-center">
-                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert1)}>
-                    <img 
-                      src={cert1} 
-                      alt="Salesforce AI Agent Developer - SmartBridge" 
-                      className="certificate-img"
-                    />
-                  </div>
-                  <p className="certificate-name mt-3">Salesforce AI Agent Developer - SmartBridge</p>
-                </div>
-              </Col>
-
-              {/* Certificate 2 */}
-              <Col xs={12} sm={6} md={4} lg={4}>
-                <div className="certificate-card text-center">
-                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert2)}>
-                    <img 
-                      src={cert2} 
-                      alt="Certificate 2" 
-                      className="certificate-img"
-                    />
-                  </div>
-                  <p className="certificate-name mt-3">NPTEL - Google Cloud Computing (IIT KGP)</p>
-                </div>
-              </Col>
-              {/* Certificate 3 */}
-              <Col xs={12} sm={6} md={4} lg={4}>
-                <div className="certificate-card text-center">
-                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert5)}>
-                    <img 
-                      src={cert5} 
-                      alt="Certificate 5" 
-                      className="certificate-img"
-                    />
-                  </div>
-                  <p className="certificate-name mt-3">Crash Course Python - Google</p>
-                </div>
-              </Col>
-              {/* Certificate 2 */}
-              <Col xs={12} sm={6} md={4} lg={4}>
-                <div className="certificate-card text-center">
-                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert7)}>
-                    <img 
-                      src={cert7} 
-                      alt="Certificate 7" 
-                      className="certificate-img"
-                    />
-                  </div>
-                  <p className="certificate-name mt-3">Cisco Python Essentials 1</p>
-                </div>
-              </Col>
-              
-              {/* Certificate 4 */}
-              <Col xs={12} sm={6} md={4} lg={4}>
-                <div className="certificate-card text-center">
-                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cert6)}>
-                    <img 
-                      src={cert6} 
-                      alt="Certificate 6" 
-                      className="certificate-img"
-                    />
-                  </div>
-                  <p className="certificate-name mt-3">Cisco Python Essentials 2</p>
-                </div>
-              </Col>
-
-
-
-            </Row>
+            
           </Col>
         </Row>
 
