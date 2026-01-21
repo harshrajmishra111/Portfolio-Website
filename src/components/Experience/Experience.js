@@ -1072,7 +1072,7 @@ Overall, freelancing strengthened my ability to translate client requirements in
                       className="certificate-img"
                     />
                   </div>
-                  <p className="certificate-name mt-3">NPTEL - Google </p>
+                  <p className="certificate-name mt-3">Cisco Python Essentials 2</p>
                 </div>
               </Col>
 
