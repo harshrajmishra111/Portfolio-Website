@@ -873,7 +873,7 @@ Overall, freelancing strengthened my ability to translate client requirements in
 
 
             {/* ═══════════ Achievement Certificates Section ═══════════ */}
-            <h3 className="text-center mb-4" style={{ fontSize: '2.5rem', fontWeight: '800', color: '#c770f0' }}>
+            <h3 className="text-center mb-4 mt-5" style={{ fontSize: '2.5rem', fontWeight: '800', color: '#c770f0' }}>
               Achievement Certificates
             </h3>
 
