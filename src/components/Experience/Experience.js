@@ -583,6 +583,18 @@ import ncc from "../../Assets/Certificates /nccA.jpeg";
 import data from "../../Assets/Certificates /datathon.jpeg";
 import tsec from "../../Assets/Certificates /tsec.png";
 import workshop from "../../Assets/Certificates /workshop.png";
+import apy from "../../Assets/Certificates /advpython.png";
+import git from "../../Assets/Certificates /git.png";
+import ml from "../../Assets/Certificates /ml.png";
+import dl from "../../Assets/Certificates /DL.png";
+import gan from "../../Assets/Certificates /gan.png";
+import sql from "../../Assets/Certificates /sql.png";
+import cpp from "../../Assets/Certificates /c++.png";
+import ccna1 from "../../Assets/Certificates /ccna1.png";
+import ccna2 from "../../Assets/Certificates /ccna2.png";
+import ccna3 from "../../Assets/Certificates /ccna3.png";
+import cloud from "../../Assets/Certificates /cloud.png";
+import cyber from "../../Assets/Certificates /Cybersecurity.png";
 
 function Experience() {
   const [selectedCert, setSelectedCert] = useState(null);
@@ -865,12 +877,170 @@ Overall, freelancing strengthened my ability to translate client requirements in
                   </div>
                   <p className="certificate-name mt-3">Cisco Python Essentials 2</p>
                 </div>
+
+
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(apy)}>
+                    <img 
+                      src={apy} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Advanced Python</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(git)}>
+                    <img 
+                      src={git} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Git and Github</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(sql)}>
+                    <img 
+                      src={sql} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">SQL Essentials</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(ml)}>
+                    <img 
+                      src={ml} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Machine learning and scikit-learn</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(dl)}>
+                    <img 
+                      src={dl} 
+                      alt="Certificate 6" 
+                      className="certificate-img"Ci
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Deep Learning</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(gan)}>
+                    <img 
+                      src={gan} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Generative Adversarial Networks</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cpp)}>
+                    <img 
+                      src={cpp} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Programming Essentials in C++</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cloud)}>
+                    <img 
+                      src={cloud} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Alibaba Cloud Certification</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(cyber)}>
+                    <img 
+                      src={cyber} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">Cybersecurity Essentials</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(ccna1)}>
+                    <img 
+                      src={ccna1} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">CCNA 1</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(ccna2)}>
+                    <img 
+                      src={ccna2} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">CCNA 2</p>
+                </div>
+              </Col>
+              {/* Certificate 4 */}
+              <Col xs={12} sm={6} md={4} lg={4}>
+                <div className="certificate-card text-center">
+                  <div className="certificate-image-wrapper" onClick={() => handleCertClick(ccna3)}>
+                    <img 
+                      src={ccna3} 
+                      alt="Certificate 6" 
+                      className="certificate-img"
+                    />
+                  </div>
+                  <p className="certificate-name mt-3">CCNA 3</p>
+                </div>
               </Col>
 
 
 
             </Row>
-            
+
 
 
             {/* ═══════════ Achievement Certificates Section ═══════════ */}
