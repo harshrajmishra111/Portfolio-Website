@@ -870,6 +870,7 @@ Overall, freelancing strengthened my ability to translate client requirements in
 
 
             </Row>
+            
 
 
             {/* ═══════════ Achievement Certificates Section ═══════════ */}
