@@ -1,4 +1,4 @@
-// import React from "react";
+ // import React from "react";
 // import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
 // import ExperienceCard from "./ExperienceCard";
@@ -558,8 +558,13 @@ import megalor from "../../Assets/Experience/megamindalor.png";
 import megacertificate from "../../Assets/Experience/megaminds certificate .png";
 import upwork from "../../Assets/Experience/Upwork 1.png";
 import upwork2 from "../../Assets/Experience/Upwork profile 2.png";
+import upwork3 from "../../Assets/Experience/upwork3.png";
+import upwork4 from "../../Assets/Experience/upwork4.png";
 import freelancer from "../../Assets/Experience/Freelancer profile.png";
 import freelancerlogo from "../../Assets/Experience/images (5).png";
+import compucom from "../../Assets/Experience/compucom-logo.jpeg";
+import compucomImg1 from "../../Assets/Experience/compucom-img1.png";
+import compucomImg2 from "../../Assets/Experience/compucom-img2.png";
 
 // Certificate imports
 import cert1 from "../../Assets/Certificates /cert1.png";
@@ -622,13 +627,66 @@ function Experience() {
         </Row>
 
         <Row className="justify-content-center g-3">
+
+
+
+          {/* ────────────── Compucom ────────────── */}
+          <Col xs={12} md={10}>
+            <ExperienceCard
+              role="Future AI Engineer"
+              company="CompuCom"
+              logo={compucom}
+              duration="February 2026 - Present"
+              points={[
+                "Integrating AI into the CC Teams project, an Agentic platform to drive automation and enhance core functionality by 30%.",
+                "Architecting and deploying complete platform using LangChain, LangGraph, LangSmith, Agent Core, and RAG to enable intelligent decision-making.",
+                "Experienced in corporate development practices using Jira, Bitbucket, and VMs, delivering projects collaborating across teams."
+              ]}
+              images={[compucomImg1, compucomImg2]}
+              description={`**Future AI Engineer — Compucom**
+
+At Compucom, I am working as a **Future AI Engineer**, contributing to the development of an enterprise-grade agentic AI platform called **CC Teams**. This role has given me deep exposure to building and shipping **production-grade agentic systems** from the ground up, using the latest AI orchestration frameworks.
+
+**CC Teams — Agentic Platform**
+
+CC Teams is an internal collaboration and automation platform powered by AI agents. My core responsibility is integrating intelligent agents into the platform to automate workflows, reduce manual effort, and improve overall team productivity by **30%**.
+
+**Technical Architecture**
+
+The platform is built using a modern AI stack:
+
+1. **LangChain & LangGraph** — for designing multi-step agentic workflows and managing agent state across complex tasks.
+
+2. **LangSmith** — for observability, tracing, and debugging of agent pipelines in production.
+
+3. **Agent Core & RAG** — for building retrieval-augmented generation pipelines that enable agents to make intelligent, context-aware decisions using internal knowledge bases.
+
+**Corporate Engineering Practices**
+
+Working at Compucom has strengthened my understanding of professional software development workflows. I use **Jira** for sprint planning and task tracking, **Bitbucket** for version control and code reviews, and work within **VM-based environments** to simulate production deployments. I collaborate daily with cross-functional teams including backend engineers, product managers, and QA.
+
+**Overall Impact**
+
+This role has been instrumental in shaping my understanding of how agentic AI systems behave in real enterprise environments — from prompt design and tool calling to agent memory, error handling, and production reliability.`}
+              projects={[
+                {
+                  name: "CC Teams — Agentic Platform",
+                  desc: "Architected and integrated a multi-agent AI system into CC Teams using LangChain, LangGraph, LangSmith, and RAG pipelines, automating core workflows and enhancing platform functionality by 30%."
+                }
+              ]}
+              modalImages={[compucomImg1, compucomImg2]}
+              companyWebsite={[
+                { name: "Compucom", url: "https://www.compucom.com/" }
+              ]}
+            />
+          </Col>       
           {/* ────────────── Caprae Capital ────────────── */}
           <Col xs={12} md={10}>
             <ExperienceCard
               role="ML Intern"
               company="Caprae Capital"
               logo={capri}
-              duration="August 2025 - December 2025"
+              duration="August 2025 - January 2026"
               points={[
                 "Increased lead conversion by 15% by integrating machine learning into Caprae Capital's proprietary SaaSquatch Leads.",
                 "Developed an in-house recruiting platform with the team, automating 70% of manual screening tasks.",
@@ -752,7 +810,7 @@ Overall, my internship at Megaminds IT Services was a highly enriching experienc
               points={[
                 "Delivered projects on domain involving Python, AI/ML, automation, data scraping, and data science.",
                 "Maintained high client satisfaction and repeat contracts",
-                "Completed 7+ freelancing projects on platforms like Freelancer and Upwork."
+                "Completed 10+ freelancing projects on platforms like Freelancer and Upwork."
               ]}
               images={[upwork, freelancer]}
               description={`**Freelancer — Python, ML/DL Developer**
@@ -788,7 +846,7 @@ Overall, freelancing strengthened my ability to translate client requirements in
                   desc: "Built a Python-based Instagram automation bot that monitors story viewers and analyzes user bios. Automatically sends personalized text and voice messages, enhancing targeted engagement." 
                 }
               ]}
-              modalImages={[upwork, upwork2, freelancer]}
+              modalImages={[upwork, upwork2, upwork3, upwork4, freelancer]}
               profileLinks={[
                 { name: "Upwork Profile", url: "https://www.upwork.com/freelancers/~010e98a8e17c0f005b?mp_source=share" },
                 { name: "Freelancer Profile", url: "https://www.freelancer.in/u/Harshrajmishra24?sb=t" }
