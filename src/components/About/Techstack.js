@@ -6,6 +6,7 @@ import { FaDatabase } from "react-icons/fa6";
 import { BiLogoFlutter } from "react-icons/bi";
 import { SiGooglecloud } from "react-icons/si";
 import { SiFlask } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
 
 
 import {
@@ -46,9 +47,22 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <BiLogoFlutter />
       </Col>
-            <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span>LangChain</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span>LangGraph</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <span>RAG</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaAws />
+      </Col>
+      
     </Row>
   );
 }
